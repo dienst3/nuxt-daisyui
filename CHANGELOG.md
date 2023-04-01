@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/dienst3/nuxt-daisyui/compare/v0.1.2...v0.1.3) (2023-04-01)
+
+
+### Bug Fixes
+
+* **ci:** set base URL for pages ([e105b09](https://github.com/dienst3/nuxt-daisyui/commit/e105b09086bb4eb3e694632925988e5bc991b833))
+
 ## [0.1.2](https://github.com/dienst3/nuxt-daisyui/compare/v0.1.1...v0.1.2) (2023-04-01)
 
 
