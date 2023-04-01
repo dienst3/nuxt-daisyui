@@ -7,5 +7,6 @@
     <InputSelect />
     <Tooltip />
     <Collapse />
+    <Table />
   </div>
 </template>
