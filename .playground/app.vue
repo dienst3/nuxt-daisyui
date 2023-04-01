@@ -4,5 +4,6 @@
     <Alert />
     <InputToggle />
     <Tooltip />
+    <Collapse />
   </div>
 </template>
