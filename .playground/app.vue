@@ -5,5 +5,6 @@
     <InputToggle />
     <Tooltip />
     <Collapse />
+    <Table />
   </div>
 </template>
