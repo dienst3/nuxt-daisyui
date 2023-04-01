@@ -1,7 +1,7 @@
 {
   "name": "@dienst3/nuxt-daisyui",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./nuxt.config.ts",
   "repository": "git@github.com:dienst3/nuxt-daisyui.git",
   "author": "Dany Sluijk <me@dany.dev>",
@@ -10,8 +10,7 @@
     "build": "nuxi build .playground",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
-    "lint": "eslint . --ext .ts,.js,.vue,.json --max-warnings 0",
-    "postinstall": "nuxt prepare"
+    "lint": "eslint . --ext .ts,.js,.vue,.json --max-warnings 0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
