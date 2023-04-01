@@ -25,6 +25,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Generate playground
+        env:
+          NUXT_APP_BASE_URL: "/nuxt-daisyui/"
         run: yarn generate
       - name: Release
         env:
