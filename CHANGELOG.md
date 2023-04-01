@@ -1,3 +1,17 @@
+# [0.2.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.1.3...v0.2.0) (2023-04-01)
+
+
+### Bug Fixes
+
+* **ci/linting:** build before typechecking ([fa59b46](https://github.com/dienst3/nuxt-daisyui/commit/fa59b46d664e6dc6defac81a6b9e1104865c3efe))
+* **ci:** add typecheck script ([f522ab2](https://github.com/dienst3/nuxt-daisyui/commit/f522ab24a59bc216dc755c4d1c6bb09339295455))
+
+
+### Features
+
+* add button component ([63b7521](https://github.com/dienst3/nuxt-daisyui/commit/63b752132eb799c99a13b4c049ee8a4ae3b8a84d))
+* **button:** add basic playground usage ([6d601d3](https://github.com/dienst3/nuxt-daisyui/commit/6d601d360929a34cd3806a9ad581184fbf697d55))
+
 ## [0.1.3](https://github.com/dienst3/nuxt-daisyui/compare/v0.1.2...v0.1.3) (2023-04-01)
 
 
