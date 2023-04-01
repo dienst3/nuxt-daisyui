@@ -3,5 +3,6 @@
     <Button />
     <InputToggle />
     <Tooltip />
+    <Collapse />
   </div>
 </template>
