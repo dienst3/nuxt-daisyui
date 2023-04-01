@@ -10,6 +10,7 @@
     "build": "nuxi build .playground",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
+    "typecheck": "nuxt typecheck",
     "lint": "eslint . --ext .ts,.js,.vue,.json --max-warnings 0"
   },
   "devDependencies": {
