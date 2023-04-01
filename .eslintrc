@@ -1,0 +1,101 @@
+{
+  "root": true,
+  "ignorePatterns": ["dist/**", ".output/**", ".nuxt/**", "dockerdata/**"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:json/recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["json", "nuxt", "@typescript-eslint"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "parser": "@typescript-eslint/parser"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-console": ["warn", { "allow": ["info", "warn", "error"] }],
+    "no-use-before-define": "off",
+    "no-empty": "warn",
+    "import/no-commonjs": "warn",
+    "import/no-useless-path-segments": "warn",
+    "import/first": "warn",
+    "import/newline-after-import": "warn",
+    "import/no-internal-modules": [
+      "warn",
+      {
+        "allow": ["*~/server/prisma", "*~/server/validation", "*~/common/*"]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
+    "vue/component-api-style": ["error", ["script-setup"]],
+    "vue/define-emits-declaration": ["error", "type-based"],
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always-and-inside-groups",
+        "warnOnUnassignedImports": true,
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ]
+      }
+    ],
+    "sort-imports": [
+      "warn",
+      {
+        "allowSeparatedGroups": true,
+        "ignoreCase": true,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+      }
+    ],
+    "vue/block-lang": [
+      "error",
+      {
+        "script": {
+          "lang": "ts"
+        },
+        "style": {
+          "lang": "scss"
+        }
+      }
+    ],
+    "vue/block-tag-newline": [
+      "error",
+      {
+        "singleline": "consistent",
+        "multiline": "always",
+        "maxEmptyLines": 1
+      }
+    ],
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": ["template", "script", "style"]
+      }
+    ],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": false
+      }
+    ]
+  }
+}
