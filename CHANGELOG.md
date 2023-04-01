@@ -1,3 +1,16 @@
+# [0.3.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.2.0...v0.3.0) (2023-04-01)
+
+
+### Bug Fixes
+
+* **alert:** add manual nuxt icon config types ([eedaa8a](https://github.com/dienst3/nuxt-daisyui/commit/eedaa8a8efed6e2f9af78de0786443b8ceaef423))
+
+
+### Features
+
+* add alert component ([62ccced](https://github.com/dienst3/nuxt-daisyui/commit/62ccced273e24ff733bc8d058e1f7e2bd24fc17b))
+* add collapse component ([5e7c75f](https://github.com/dienst3/nuxt-daisyui/commit/5e7c75f5fedeb58d29153adfb45c3b3ff441edca))
+
 # [0.2.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.1.3...v0.2.0) (2023-04-01)
 
 
