@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.3.0...v0.4.0) (2023-04-01)
+
+
+### Features
+
+* add input select component ([c1af06c](https://github.com/dienst3/nuxt-daisyui/commit/c1af06c7ef840f222871711b4517f6b4e319b1ba))
+* add input text component ([7913f9d](https://github.com/dienst3/nuxt-daisyui/commit/7913f9d82af4f990bbc0377db341300dc20853cc))
+* add table component ([785f362](https://github.com/dienst3/nuxt-daisyui/commit/785f362c0e6c82cb70daa37f7d539651c3d51eeb))
+
 # [0.3.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.2.0...v0.3.0) (2023-04-01)
 
 
