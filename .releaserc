@@ -1,16 +1,12 @@
 {
-  "branches": [
-    "main"
-  ],
-  "verifyConditions": [
+  "branch": "main",
+  "preset": "angular",
+  "plugins": [
+    "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/npm",
     "@semantic-release/git",
-    "@qiwi/semantic-release-gh-pages-plugin"
-  ],
-  "publish": [
-    "@semantic-release/npm",
     "@semantic-release/github",
+    "@semantic-release/npm",
     [
       "@qiwi/semantic-release-gh-pages-plugin",
       {
