@@ -1,5 +1,7 @@
 {
-  "branch": "main",
+  "branches": [
+    "main"
+  ],
   "preset": "angular",
   "plugins": [
     "@semantic-release/release-notes-generator",
