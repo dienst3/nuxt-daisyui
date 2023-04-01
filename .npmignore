@@ -1,0 +1,7 @@
+.editorconfig
+.playground
+.prettier*
+.eslint*
+.nuxt*
+.github*
+tsconfig.json
