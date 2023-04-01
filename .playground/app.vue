@@ -3,6 +3,7 @@
     <Button />
     <Alert />
     <InputToggle />
+    <InputSelect />
     <Tooltip />
     <Collapse />
   </div>
