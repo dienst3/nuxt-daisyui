@@ -15,3 +15,5 @@
 * **ci:** branch naming ([185675f](https://github.com/dienst3/nuxt-daisyui/commit/185675f4f2787090a55933af025c4f2d219c6751))
 * **ci:** fix branch key ([03c4b66](https://github.com/dienst3/nuxt-daisyui/commit/03c4b66143d766b735720bb3d11827087b2ba139))
 * **ci:** fix release config ([14d30b0](https://github.com/dienst3/nuxt-daisyui/commit/14d30b000a37ae5c6446ee8cb8151fc4e0216e16))
+
+<!-- @generated ignore this file in the CI -->
