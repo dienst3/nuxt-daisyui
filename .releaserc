@@ -1,21 +1,21 @@
 {
-  "release": {
-    "branch": "main",
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      "@qiwi/semantic-release-gh-pages-plugin"
-    ],
-    "publish": [
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      [
-        "@qiwi/semantic-release-gh-pages-plugin",
-        {
-          "src": ".playground/.output/public"
-        }
-      ]
+  "branches": [
+    "main"
+  ],
+  "verifyConditions": [
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    "@semantic-release/git",
+    "@qiwi/semantic-release-gh-pages-plugin"
+  ],
+  "publish": [
+    "@semantic-release/npm",
+    "@semantic-release/github",
+    [
+      "@qiwi/semantic-release-gh-pages-plugin",
+      {
+        "src": ".playground/.output/public"
+      }
     ]
-  }
+  ]
 }
