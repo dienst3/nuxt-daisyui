@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs" :class="classes">
+  <div class="tabs py-2" :class="classes">
     <slot />
   </div>
 </template>

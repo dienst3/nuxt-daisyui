@@ -1,5 +1,9 @@
 <template>
-  <div :tabindex="!toggle ? 0 : undefined" class="collapse" :class="classes">
+  <div
+    :tabindex="!toggle ? 0 : undefined"
+    class="collapse my-4"
+    :class="classes"
+  >
     <input v-if="toggle" type="checkbox" />
     <div class="collapse-title text-xl font-medium">
       {{ title }}
