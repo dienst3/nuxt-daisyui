@@ -1,3 +1,11 @@
+# [0.6.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.5.1...v0.6.0) (2023-04-02)
+
+
+### Features
+
+* add checkbox component ([195c180](https://github.com/dienst3/nuxt-daisyui/commit/195c1805caf0c7b9b3fbe0cabb35c9bc6cb0deae))
+* **toggle:** allow for an indeterminate state ([b537c6c](https://github.com/dienst3/nuxt-daisyui/commit/b537c6ce14ac96e47714a688aeed08c7ad9dd96e))
+
 ## [0.5.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.5.0...v0.5.1) (2023-04-02)
 
 

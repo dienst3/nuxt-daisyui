@@ -4,7 +4,7 @@
       <span v-if="label" class="label-text">{{ label }}</span>
       <input
         type="checkbox"
-        class="toggle"
+        class="checkbox"
         :class="classes"
         :checked="modelValue && modelValue !== 'indeterminate'"
         :disabled="disabled"
@@ -39,16 +39,16 @@ const toggle = () => {
 };
 
 const classes = computed(() => ({
-  "toggle-xs": props.size === "xs",
-  "toggle-sm": props.size === "sm",
-  "toggle-md": props.size === "md",
-  "toggle-lg": props.size === "lg",
-  "toggle-primary": props.color === "primary",
-  "toggle-secondary": props.color === "secondary",
-  "toggle-accent": props.color === "accent",
-  "toggle-info": props.color === "info",
-  "toggle-success": props.color === "success",
-  "toggle-warning": props.color === "warning",
-  "toggle-error": props.color === "error",
+  "checkbox-xs": props.size === "xs",
+  "checkbox-sm": props.size === "sm",
+  "checkbox-md": props.size === "md",
+  "checkbox-lg": props.size === "lg",
+  "checkbox-primary": props.color === "primary",
+  "checkbox-secondary": props.color === "secondary",
+  "checkbox-accent": props.color === "accent",
+  "checkbox-info": props.color === "info",
+  "checkbox-success": props.color === "success",
+  "checkbox-warning": props.color === "warning",
+  "checkbox-error": props.color === "error",
 }));
 </script>

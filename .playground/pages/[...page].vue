@@ -3,6 +3,7 @@
     <Button />
     <Alert />
     <InputText />
+    <InputCheckbox />
     <InputToggle />
     <InputSelect />
     <Tabs />
