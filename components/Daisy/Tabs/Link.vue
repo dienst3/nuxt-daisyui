@@ -2,7 +2,8 @@
   <NuxtLink
     class="tab"
     :class="classes"
-    active-class="tab-active"
+    :active-class="exact ? '' : 'tab-active'"
+    :exact-active-class="exact ? 'tab-active' : ''"
     :disabled="disabled ? 'disabled' : undefined"
   >
     {{ title }}
@@ -15,6 +16,7 @@ import { TabsSettings } from "./Index.vue";
 interface Props {
   title: string;
   disabled?: boolean;
+  exact?: boolean;
 }
 
 const props = defineProps<Props>();
