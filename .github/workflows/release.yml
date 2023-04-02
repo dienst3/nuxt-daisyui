@@ -29,6 +29,8 @@ jobs:
           NUXT_APP_BASE_URL: "/"
           NUXT_APP_BUILD_ASSETS_DIR: "/nuxt/"
         run: yarn generate
+      - name: Add CNAME
+        run: "echo 'daisy.dienst3.nl' > .playground/.output/public/CNAME"
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
