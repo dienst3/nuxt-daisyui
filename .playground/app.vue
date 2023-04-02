@@ -5,6 +5,7 @@
     <InputText />
     <InputToggle />
     <InputSelect />
+    <Tabs />
     <Tooltip />
     <Collapse />
     <Table />
