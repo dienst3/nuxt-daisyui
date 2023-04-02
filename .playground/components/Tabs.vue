@@ -6,6 +6,11 @@
     <DaisyTabsEntry name="three" title="Tab Three" />
   </DaisyTabs>
   <span>{{ activeTab }}</span>
+  <DaisyTabs lifted>
+    <DaisyTabsLink to="/" title="Tab One" />
+    <DaisyTabsLink to="/two" title="Link Two" disabled />
+    <DaisyTabsLink to="/three" title="Tab Three" />
+  </DaisyTabs>
 </template>
 
 <script lang="ts" setup>
