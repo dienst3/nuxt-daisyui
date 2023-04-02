@@ -6,14 +6,10 @@
         type="checkbox"
         class="toggle"
         :class="classes"
-        :checked="modelValue"
+        :checked="modelValue && modelValue !== 'indeterminate'"
         :disabled="disabled"
-        @change="
-          $emit(
-            'update:modelValue',
-            ($event.target as HTMLInputElement).checked,
-          )
-        "
+        :indeterminate="modelValue === 'indeterminate'"
+        @change="toggle"
       />
     </label>
   </div>
@@ -21,7 +17,7 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
-  modelValue?: boolean;
+  modelValue?: boolean | "indeterminate";
   label?: string;
   disabled?: boolean;
   size?: "xs" | "sm" | "md" | "lg";
@@ -34,9 +30,13 @@ const props = defineProps<{
     | "warning"
     | "error";
 }>();
-defineEmits<{
+const emit = defineEmits<{
   (eventName: "update:modelValue", value: boolean): void;
 }>();
+
+const toggle = () => {
+  emit("update:modelValue", props.modelValue === false);
+};
 
 const classes = computed(() => ({
   "toggle-xs": props.size === "xs",
