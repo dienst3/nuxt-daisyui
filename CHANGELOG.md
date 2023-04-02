@@ -1,3 +1,15 @@
+# [0.5.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.4.0...v0.5.0) (2023-04-02)
+
+
+### Bug Fixes
+
+* **ci/release:** use a custom PAT for release ([48b800a](https://github.com/dienst3/nuxt-daisyui/commit/48b800ad5974337d425846cf57021be1c2c2e866))
+
+
+### Features
+
+* add tabs component ([a0d8913](https://github.com/dienst3/nuxt-daisyui/commit/a0d8913c4bc4959b8b6b24a6cf04a3ec38ac0220))
+
 # [0.4.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.3.0...v0.4.0) (2023-04-01)
 
 
