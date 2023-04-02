@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.6.0...v0.7.0) (2023-04-02)
+
+
+### Features
+
+* **tabs:** add NuxtLink compatible component ([9c86993](https://github.com/dienst3/nuxt-daisyui/commit/9c86993de9d32f72d2ca63b531976999befdc2c8))
+
 # [0.6.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.5.1...v0.6.0) (2023-04-02)
 
 
