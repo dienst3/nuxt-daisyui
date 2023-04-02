@@ -1,3 +1,11 @@
+## [0.7.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.7.0...v0.7.1) (2023-04-02)
+
+
+### Bug Fixes
+
+* add several margins ([f254761](https://github.com/dienst3/nuxt-daisyui/commit/f254761478bea160f9a6a97dec57ae33bd50a4a7))
+* **tabs:** allow for exact matching ([536aba7](https://github.com/dienst3/nuxt-daisyui/commit/536aba796bbae50a01506123ebd6890481f9da46))
+
 # [0.7.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.6.0...v0.7.0) (2023-04-02)
 
 
