@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.5.0...v0.5.1) (2023-04-02)
+
+
+### Bug Fixes
+
+* **ci/release:** add CNAME file for docs ([feb5c31](https://github.com/dienst3/nuxt-daisyui/commit/feb5c312a697feb0ddbbfe1f4f4cc209a902c845))
+
 # [0.5.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.4.0...v0.5.0) (2023-04-02)
 
 
