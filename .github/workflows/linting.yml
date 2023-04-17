@@ -37,7 +37,7 @@ jobs:
           node-version: 18
       - run: yarn install
       - run: yarn build
-      - uses: github/super-linter@v4
+      - uses: github/super-linter@v5
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
