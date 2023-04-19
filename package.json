@@ -38,7 +38,7 @@
     "vue-tsc": "^1.2.0"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.6.5",
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "daisyui": "^2.51.5",
     "nuxt-icon": "^0.3.3"
   }
