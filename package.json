@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.6.7",
-    "daisyui": "^2.51.5",
+    "daisyui": "^3.0.0",
     "nuxt-icon": "^0.3.3"
   }
 }
