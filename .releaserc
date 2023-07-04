@@ -8,12 +8,6 @@
     "@semantic-release/changelog",
     "@semantic-release/git",
     "@semantic-release/github",
-    "@semantic-release/npm",
-    [
-      "@qiwi/semantic-release-gh-pages-plugin",
-      {
-        "src": ".playground/.output/public"
-      }
-    ]
+    "@semantic-release/npm"
   ]
 }
