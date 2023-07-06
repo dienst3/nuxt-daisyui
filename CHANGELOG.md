@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.9.0...v0.10.0) (2023-07-06)
+
+
+### Features
+
+* **drawer:** add drawer component ([be835b8](https://github.com/dienst3/nuxt-daisyui/commit/be835b8b82dfbc15b82318cfd9c77ddec7ef2d89))
+
 # [0.9.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.8.0...v0.9.0) (2023-07-06)
 
 
