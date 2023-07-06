@@ -1,3 +1,11 @@
+## [0.10.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.0...v0.10.1) (2023-07-06)
+
+
+### Bug Fixes
+
+* **drawer:** add covering default background color ([1025f17](https://github.com/dienst3/nuxt-daisyui/commit/1025f17047557eb55f1fc687e61d0991f1aca7fd))
+* **drawer:** remove overflowing side content ([e269115](https://github.com/dienst3/nuxt-daisyui/commit/e269115bd415dde286540d6e217ecd044fc5d87c))
+
 # [0.10.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.9.0...v0.10.0) (2023-07-06)
 
 
