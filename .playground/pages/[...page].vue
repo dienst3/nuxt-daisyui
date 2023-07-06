@@ -12,5 +12,6 @@
     <Collapse />
     <Table />
     <Menu />
+    <Drawer />
   </div>
 </template>
