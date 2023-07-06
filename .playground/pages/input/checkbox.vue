@@ -1,5 +1,5 @@
 <template>
-  <h2>Input: Checkbox</h2>
+  <h1>Checkbox</h1>
   <DaisyInputCheckbox />
   <DaisyInputCheckbox
     label="I'm disabled and checked"

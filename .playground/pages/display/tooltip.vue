@@ -1,4 +1,4 @@
 <template>
-  <h2>Tooltip</h2>
+  <h1>Tooltip</h1>
   <DaisyTooltip tip="Hello world!">Hover me!</DaisyTooltip>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <h2>Collapse</h2>
+  <h1>Collapse</h1>
   <DaisyCollapse title="Click me to open" toggle indicator>
     <span>This is some content.</span>
   </DaisyCollapse>

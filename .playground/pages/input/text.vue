@@ -1,5 +1,5 @@
 <template>
-  <h2>Input: Text</h2>
+  <h1>Text</h1>
   <DaisyInputText placeholder="Type something here!" />
   <DaisyInputText
     title="Something"
