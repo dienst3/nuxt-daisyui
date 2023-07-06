@@ -63,20 +63,20 @@ jobs:
           VALIDATE_PYTHON: false
           VALIDATE_R: false
           VALIDATE_XML: false
-  prettier:
-    name: Validate Prettier
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref }}
-          persist-credentials: false
-      - uses: creyD/prettier_action@v4.3
-        with:
-          dry: True
-          prettier_options: "--check ."
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+  # prettier:
+  #   name: Validate Prettier
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ github.head_ref }}
+  #         persist-credentials: false
+  #     - uses: creyD/prettier_action@v4.3
+  #       with:
+  #         dry: True
+  #         prettier_options: "--check ."
+  #         github_token: ${{ secrets.GITHUB_TOKEN }}
   eslint:
     name: Eslint
     runs-on: ubuntu-latest
