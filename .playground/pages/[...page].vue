@@ -10,5 +10,6 @@
     <Tooltip />
     <Collapse />
     <Table />
+    <Menu />
   </div>
 </template>
