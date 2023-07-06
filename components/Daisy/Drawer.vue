@@ -11,7 +11,9 @@
     </div>
     <div class="drawer-side max-h-full absolute not-prose">
       <label class="drawer-overlay" @click="toggle"></label>
-      <slot name="side" />
+      <div>
+        <slot name="side" />
+      </div>
     </div>
   </div>
 </template>
