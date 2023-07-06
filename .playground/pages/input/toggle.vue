@@ -1,5 +1,5 @@
 <template>
-  <h2>Input: Toggle</h2>
+  <h1>Toggle</h1>
   <DaisyInputToggle label="Switch me!" />
   <DaisyInputToggle
     label="I don't know what I am"

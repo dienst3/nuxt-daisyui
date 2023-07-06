@@ -1,5 +1,5 @@
 <template>
-  <h2>Drawer</h2>
+  <h1>Drawer</h1>
   <DaisyDrawer v-model="drawerOpen" class="h-96">
     <template #side>
       <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">

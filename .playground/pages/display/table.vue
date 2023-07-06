@@ -1,5 +1,5 @@
 <template>
-  <h2>Table</h2>
+  <h1>Table</h1>
   <DaisyTable bordered>
     <template #head>
       <th class="w-32">#</th>

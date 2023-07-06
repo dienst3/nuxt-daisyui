@@ -4,25 +4,26 @@
       :to="to"
       :target="target"
       :rel="rel"
+      :class="classes"
       :disabled="disabled ? 'disabled' : undefined"
       :style="disabled ? 'pointer-events: none' : ''"
       :active-class="!exact ? 'active' : ''"
       exact-active-class="active"
     >
-      {{ title }}
+      <slot />
     </NuxtLink>
-    <template v-if="$slots.default">
+    <template v-if="$slots.children">
       <ul>
-        <slot />
+        <slot name="children" />
       </ul>
     </template>
   </li>
   <li v-else :class="classes">
     <details :open="open">
-      <summary>{{ title }}</summary>
-      <template v-if="$slots.default">
+      <summary><slot /></summary>
+      <template v-if="$slots.children">
         <ul>
-          <slot />
+          <slot name="children" />
         </ul>
       </template>
     </details>
@@ -31,7 +32,6 @@
 
 <script lang="ts" setup>
 interface Props {
-  title: string;
   collapsible?: boolean;
   disabled?: boolean;
   active?: boolean;

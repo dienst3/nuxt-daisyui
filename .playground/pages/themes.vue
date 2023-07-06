@@ -1,5 +1,5 @@
 <template>
-  <h2>Theme</h2>
+  <h1>Theme</h1>
   <DaisyInputSelect
     v-model="theme"
     title="Select a theme to preview"

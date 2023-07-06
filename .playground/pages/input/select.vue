@@ -1,5 +1,5 @@
 <template>
-  <h2>Input: Select</h2>
+  <h1>Select</h1>
   <DaisyInputSelect>
     <option value="" disabled>Select Something</option>
     <option value="one">One</option>

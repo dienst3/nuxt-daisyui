@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-export interface TabsSettings {
+export interface TabSettings {
   bordered: Ref<boolean>;
   lifted: Ref<boolean>;
   selected: Ref<string>;
@@ -28,7 +28,7 @@ const classes = computed(() => ({
   "tabs-boxed": props.boxed,
 }));
 
-provide<TabsSettings>("daisy-tabs", {
+provide<TabSettings>("daisy-tab", {
   bordered: computed(() => props.bordered ?? false),
   lifted: computed(() => props.lifted ?? false),
   size: computed(() => props.size ?? "md"),

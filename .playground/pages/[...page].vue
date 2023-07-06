@@ -1,17 +1,4 @@
 <template>
-  <div class="max-w-screen-md mx-auto pt-4 md:pt-8 px-4 mb-2 prose">
-    <Theme />
-    <Button />
-    <Alert />
-    <InputText />
-    <InputCheckbox />
-    <InputToggle />
-    <InputSelect />
-    <Tabs />
-    <Tooltip />
-    <Collapse />
-    <Table />
-    <Menu />
-    <Drawer />
-  </div>
+  <h1>404</h1>
+  <p>:(</p>
 </template>
