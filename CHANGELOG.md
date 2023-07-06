@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.7.1...v0.8.0) (2023-07-06)
+
+
+### Features
+
+* add menu component ([142cecc](https://github.com/dienst3/nuxt-daisyui/commit/142cecc4e30c1b3cda65a01299b016c183decb07))
+
 ## [0.7.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.7.0...v0.7.1) (2023-04-02)
 
 
