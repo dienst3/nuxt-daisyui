@@ -2,14 +2,12 @@
   <DaisyDrawer v-model="drawer" responsive>
     <template #side>
       <div class="min-h-full w-full md:w-2/3 lg:w-96 bg-base-100">
-        <div
-          class="sticky lg:hidden top-0 flex flex-row items-center justify-between px-6 h-16 bg-base-100 z-10"
-        >
-          <h1 class="text-primary text-2xl font-bold">Nuxt DaisyUI</h1>
+        <DaisyNavBar class="sticky top-0 bg-base-200 z-10">
           <DaisyButton
             @click="drawer = !drawer"
             title="Click to close drawer"
             color="secondary"
+            class="mr-4 lg:hidden"
           >
             <Icon
               name="material-symbols:close-rounded"
@@ -17,7 +15,8 @@
               class="text-secondary-content"
             />
           </DaisyButton>
-        </div>
+          <h1 class="text-primary text-2xl font-bold px-2">Nuxt DaisyUI</h1>
+        </DaisyNavBar>
 
         <DaisyMenu class="px-4 pb-2">
           <DaisyMenuItem to="/">
@@ -178,18 +177,51 @@
       </div>
     </template>
 
-    <div class="sticky top-0 flex flex-row items-center mx-2 h-16 bg-base-100">
-      <DaisyButton
-        @click="drawer = !drawer"
-        title="Click to close drawer"
-        outline
-        ghost
-        class="mr-4 lg:hidden"
-      >
-        <Icon name="material-symbols:menu" size="24px" />
-      </DaisyButton>
-      <h1 class="text-primary text-2xl font-bold">Nuxt DaisyUI</h1>
-    </div>
+    <DaisyNavBar class="sticky top-0 bg-base-200">
+      <template #start>
+        <DaisyButton
+          @click="drawer = !drawer"
+          title="Click to close drawer"
+          outline
+          ghost
+          class="mr-4 lg:hidden"
+        >
+          <Icon name="material-symbols:menu" size="24px" />
+        </DaisyButton>
+      </template>
+      <template #end>
+        <div class="join mx-3">
+          <DaisyButton
+            type="link"
+            to="https://github.com/dienst3/nuxt-daisyui"
+            title="Find us on GitHub"
+            target="_blank"
+            shape="circle"
+            color="secondary"
+            class="join-item"
+          >
+            <Icon name="mdi:github" size="24px" />
+          </DaisyButton>
+          <DaisyButton
+            type="link"
+            to="https://www.npmjs.com/@dienst3/nuxt-daisyui"
+            title="Find us on NPM"
+            target="_blank"
+            shape="circle"
+            color="secondary"
+            class="join-item"
+          >
+            <Icon name="mdi:npm-variant" size="24px" />
+          </DaisyButton>
+        </div>
+        <DaisyInputSelect v-model="theme" size="md" color="primary">
+          <option value="" disabled>Select a theme</option>
+          <option v-for="theme in availableThemes" :value="theme">
+            {{ theme }}
+          </option>
+        </DaisyInputSelect>
+      </template>
+    </DaisyNavBar>
 
     <div class="mx-4 md:mx-8 my-6 prose">
       <slot />
@@ -200,6 +232,7 @@
 <script setup lang="ts">
 const drawer = ref(false);
 const router = useRouter();
+const { theme, availableThemes } = useDaisyTheme();
 
 router.afterEach(() => {
   drawer.value = false;
