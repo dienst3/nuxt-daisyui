@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.11.0...v0.12.0) (2023-07-07)
+
+
+### Features
+
+* **button:** allow button to function as a link ([57fa8e1](https://github.com/dienst3/nuxt-daisyui/commit/57fa8e150eabfd06a3ca8bd526f8dd0fce06a264))
+
 # [0.11.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.3...v0.11.0) (2023-07-07)
 
 
