@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn mt-2"
+    class="btn"
     :class="classes"
     :disabled="disabled"
     :type="type"
