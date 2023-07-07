@@ -1,4 +1,8 @@
 <template>
   <h1>Tooltip</h1>
-  <DaisyTooltip tip="Hello world!">Hover me!</DaisyTooltip>
+  <Preview>
+    <template #vue>//todo Vue code</template>
+
+    <DaisyTooltip tip="Hello world!">Hover me!</DaisyTooltip>
+  </Preview>
 </template>
