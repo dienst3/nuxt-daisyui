@@ -45,7 +45,6 @@ const props = defineProps<{
   active?: boolean;
   disabled?: boolean;
   glass?: boolean;
-  loading?: boolean;
   noAnimation?: boolean;
   wide?: boolean;
   block?: boolean;
@@ -73,7 +72,6 @@ const classes = computed(() => ({
   "btn-active": props.active,
   "btn-disabled": props.disabled,
   "glass": props.glass,
-  "loading": props.loading,
   "no-animation": props.noAnimation,
   "btn-wide": props.wide,
   "btn-block": props.block,
