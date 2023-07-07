@@ -1,20 +1,35 @@
 <template>
   <button
+    v-if="type !== 'link'"
     class="btn"
     :class="classes"
-    :disabled="disabled"
+    :disabled="disabled || undefined"
     :type="type"
     :title="title"
     @click="$emit('click')"
   >
     <slot />
   </button>
+  <NuxtLink
+    v-else
+    role="button"
+    class="btn"
+    :to="to"
+    :target="target"
+    :class="classes"
+    :disabled="disabled || undefined"
+    :title="title"
+  >
+    <slot />
+  </NuxtLink>
 </template>
 
 <script lang="ts" setup>
 const props = defineProps<{
   title: string;
-  type?: "submit" | "reset";
+  type?: "submit" | "reset" | "link";
+  to?: string;
+  target?: "_blank" | "_self" | "_parent" | "_top" | string;
   size?: "xs" | "sm" | "md" | "lg";
   color?:
     | "primary"
