@@ -151,9 +151,7 @@
               </DaisyMenuItem>
               <DaisyMenuItem to="/navigation/link" disabled>Link</DaisyMenuItem>
               <DaisyMenuItem to="/navigation/menu">Menu</DaisyMenuItem>
-              <DaisyMenuItem to="/navigation/navbar" disabled>
-                Navbar
-              </DaisyMenuItem>
+              <DaisyMenuItem to="/navigation/navbar">Navbar</DaisyMenuItem>
               <DaisyMenuItem to="/navigation/pagination" disabled>
                 Pagination
               </DaisyMenuItem>
