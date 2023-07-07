@@ -1,6 +1,4 @@
-import typography from "@tailwindcss/typography";
-
-export const plugins = [typography];
+export const plugins = [];
 export const daisyui = {
   themes: [
     "light",

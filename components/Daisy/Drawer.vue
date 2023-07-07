@@ -9,7 +9,7 @@
     <div class="drawer-content">
       <slot />
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side z-20">
       <label class="drawer-overlay" @click="toggle"></label>
       <slot name="side" />
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu not-prose" :class="classes">
+  <ul class="menu" :class="classes">
     <li v-if="title" class="menu-title">{{ title }}</li>
     <slot />
   </ul>

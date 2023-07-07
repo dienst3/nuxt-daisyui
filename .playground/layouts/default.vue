@@ -223,7 +223,7 @@
       </template>
     </DaisyNavBar>
 
-    <div class="mx-4 md:mx-8 my-6 prose">
+    <div class="mx-2 my-6">
       <slot />
     </div>
   </DaisyDrawer>
