@@ -1,3 +1,10 @@
+## [0.10.2](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.1...v0.10.2) (2023-07-07)
+
+
+### Bug Fixes
+
+* **drawer:** weird drawer length ([c042f40](https://github.com/dienst3/nuxt-daisyui/commit/c042f4055baeb3928c61e1e533c5663cd4e0cbbc))
+
 ## [0.10.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.0...v0.10.1) (2023-07-06)
 
 
