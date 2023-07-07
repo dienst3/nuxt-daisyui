@@ -1,7 +1,7 @@
 <template>
   <div v-if="content && !hidden" class="alert shadow-lg my-3" :class="classes">
     <div>
-      <Icon :name="icon" size="24px" />
+      <Icon :name="icon" size="24px" class="mr-2" />
       <span>{{ content }}</span>
     </div>
   </div>
