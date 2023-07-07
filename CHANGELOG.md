@@ -1,3 +1,10 @@
+## [0.12.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.12.0...v0.12.1) (2023-07-07)
+
+
+### Bug Fixes
+
+* **button:** remove invalid loading prop ([5714163](https://github.com/dienst3/nuxt-daisyui/commit/5714163db57d01c7d0ac6fc343e3054500a4d828))
+
 # [0.12.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.11.0...v0.12.0) (2023-07-07)
 
 
