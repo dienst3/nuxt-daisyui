@@ -9,11 +9,9 @@
     <div class="drawer-content">
       <slot />
     </div>
-    <div class="drawer-side max-h-full absolute not-prose">
+    <div class="drawer-side">
       <label class="drawer-overlay" @click="toggle"></label>
-      <div class="bg-base-100">
-        <slot name="side" />
-      </div>
+      <slot name="side" />
     </div>
   </div>
 </template>
