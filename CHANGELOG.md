@@ -1,3 +1,10 @@
+## [0.10.3](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.2...v0.10.3) (2023-07-07)
+
+
+### Bug Fixes
+
+* **alert:** add slight padding between the icon and text ([8d715c8](https://github.com/dienst3/nuxt-daisyui/commit/8d715c8435fe432efe6a9699cd7eb09bbaccd649))
+
 ## [0.10.2](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.1...v0.10.2) (2023-07-07)
 
 
