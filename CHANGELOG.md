@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.3...v0.11.0) (2023-07-07)
+
+
+### Features
+
+* **navbar:** add NavBar component ([c879143](https://github.com/dienst3/nuxt-daisyui/commit/c879143fd4bfc140e7f0edda7b407b04b127fd5c))
+
 ## [0.10.3](https://github.com/dienst3/nuxt-daisyui/compare/v0.10.2...v0.10.3) (2023-07-07)
 
 
