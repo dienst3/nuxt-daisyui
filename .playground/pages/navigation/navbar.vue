@@ -25,7 +25,7 @@ const previewCode = computed(() => {
   });
 
   return `\
-<DaisyNavBar${attrs}>
+<DaisyNavBar${attrs.value}>
   <template #start>Start</template>
   <div>Middle</div>
   <template #end>End</template>
