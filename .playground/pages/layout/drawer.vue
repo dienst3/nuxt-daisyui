@@ -1,8 +1,6 @@
 <template>
   <h1>Drawer</h1>
   <Preview>
-    <template #vue>//todo Vue code</template>
-
     <DaisyDrawer v-model="drawerOpen" class="h-96" end>
       <template #side>
         <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">

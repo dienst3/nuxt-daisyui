@@ -43,7 +43,7 @@
 const activeTab = ref<"preview" | "vue">("preview");
 
 const props = defineProps<{
-  code: string;
+  code?: string;
 }>();
 
 const {
