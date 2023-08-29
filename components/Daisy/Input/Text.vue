@@ -19,7 +19,11 @@
       @input="
         $emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)
       "
-      @invalid.prevent="(e) => (validationError = (e.target as HTMLTextAreaElement).validationMessage)"
+      @invalid.prevent="
+        (e) =>
+          (validationError = (e.target as HTMLTextAreaElement)
+            .validationMessage)
+      "
       @focus="() => (validationError = '')"
     />
     <label v-if="error || validationError" class="label">
