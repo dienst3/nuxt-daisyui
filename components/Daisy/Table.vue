@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto not-prose my-2" :class="wrapperClasses">
+  <div class="overflow-x-auto" :class="wrapperClasses">
     <table class="table w-full" :class="classes">
       <thead>
         <tr>
