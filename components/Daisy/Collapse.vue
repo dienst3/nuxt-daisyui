@@ -20,8 +20,7 @@ interface Props {
   title: string;
   toggle?: boolean;
   indicator?: boolean;
-  forceOpen?: boolean;
-  forceClose?: boolean;
+  state?: "opened" | "closed";
   bordered?: boolean;
   background?: boolean;
   rounded?: boolean;
@@ -30,8 +29,8 @@ interface Props {
 const props = defineProps<Props>();
 
 const classes = computed(() => ({
-  "collapse-open": props.forceOpen,
-  "collapse-close": props.forceClose,
+  "collapse-open": props.state === "opened",
+  "collapse-close": props.state === "closed",
   "collapse-plus": props.indicator && props.toggle,
   "collapse-arrow": props.indicator && !props.toggle,
   "border": props.bordered,
