@@ -150,6 +150,7 @@ const shape = ref();
 
 const previewCode = computed(() => {
   const attrs = useComponentAttrs({
+    "@click": ref("doSomething()"),
     title,
     type,
     to,
@@ -169,7 +170,7 @@ const previewCode = computed(() => {
   });
 
   return `\
-<DaisyButton @click="doSomething()"${attrs.value}>
+<DaisyButton${attrs.value}>
   Click me!
 </DaisyButton>`;
 });

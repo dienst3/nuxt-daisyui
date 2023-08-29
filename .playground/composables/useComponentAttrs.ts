@@ -20,8 +20,13 @@ export const useComponentAttrs = (input: { [k: string]: Ref<any> }) =>
 
         return `${k}="${v.value}"`;
       })
-      .filter((v) => !!v)
-      .join(" ");
-    const prefix = attrs.length > 0 ? " " : "";
-    return prefix + attrs;
+      .filter((v) => !!v);
+    const totalLength = attrs.reduce(
+      (prev, item) => (item ? prev + item.length : prev),
+      0,
+    );
+    const merged = attrs.join(totalLength > 50 ? "\n  " : " ");
+    const prefix = totalLength > 50 ? "\n  " : totalLength > 0 ? " " : "";
+    const suffix = totalLength > 50 ? "\n" : "";
+    return prefix + merged + suffix;
   });
