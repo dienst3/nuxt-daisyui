@@ -2,6 +2,13 @@
   <PageTitle>Checkbox</PageTitle>
   <div class="flex flex-col 2xl:flex-row gap-8">
     <PropsTable>
+      <PropsTableEntry name="model" description="The value of the checkbox.">
+        <DaisyInputSelect v-model="model" bordered size="sm">
+          <option value="false">false</option>
+          <option value="true">true</option>
+          <option value="indeterminate">indeterminate</option>
+        </DaisyInputSelect>
+      </PropsTableEntry>
       <PropsTableEntry name="label" description="The label of the checkbox.">
         <DaisyInputText
           v-model="label"
@@ -25,6 +32,7 @@
     </PropsTable>
     <Preview :code="previewCode">
       <DaisyInputCheckbox
+        v-model="model"
         :label="label"
         :disabled="disabled"
         :size="size"
@@ -35,6 +43,7 @@
 </template>
 
 <script setup lang="ts">
+const model = ref(false);
 const label = ref();
 const disabled = ref(false);
 const size = ref();
