@@ -1,5 +1,5 @@
 <template>
-  <h1>Tooltip</h1>
+  <PageTitle>Tooltip</PageTitle>
   <div class="flex flex-col 2xl:flex-row gap-8">
     <DaisyTable bordered class="flex-1">
       <template #head>
@@ -56,9 +56,7 @@
         <td>No</td>
       </tr>
     </DaisyTable>
-    <Preview class="flex-1">
-      <template #vue>//todo Vue code</template>
-
+    <Preview :code="previewCode">
       <DaisyTooltip :tip="tip" :open="open" :location="location" :color="color">
         Hover me!
       </DaisyTooltip>
@@ -71,4 +69,39 @@ const tip = ref("This is a tooltip!");
 const open = ref(false);
 const location = ref();
 const color = ref();
+
+const previewCode = computed(() => {
+  const attrs = Object.entries({
+    tip: tip.value || "tip",
+    open: open.value,
+    location: location.value,
+    color: color.value,
+  })
+    .map(([k, v]) => {
+      if (v === undefined) {
+        return undefined;
+      }
+
+      if (v === true) {
+        return k;
+      }
+
+      if (v === false) {
+        return undefined;
+      }
+
+      if (v === "") {
+        return undefined;
+      }
+
+      return `${k}="${v}"`;
+    })
+    .filter((v) => !!v)
+    .join(" ");
+
+  return `\
+<DaisyTooltip ${attrs}>
+  Hover me!
+</DaisyTooltip>`;
+});
 </script>
