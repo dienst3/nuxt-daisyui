@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-const model = ref(false);
+const model = ref<boolean | "indeterminate">("indeterminate");
 const label = ref();
 const disabled = ref(false);
 const size = ref();
