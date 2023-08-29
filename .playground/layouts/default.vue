@@ -177,7 +177,7 @@
       </div>
     </template>
 
-    <DaisyNavBar class="sticky top-0 bg-base-200">
+    <DaisyNavBar class="sticky top-0 bg-base-200 z-20">
       <template #start>
         <DaisyButton
           @click="drawer = !drawer"
@@ -216,7 +216,7 @@
         </div>
         <DaisyInputSelect v-model="theme" size="md" color="primary">
           <option value="" disabled>Select a theme</option>
-          <option v-for="theme in availableThemes" :value="theme">
+          <option v-for="theme in filteredThemes" :key="theme" :value="theme">
             {{ theme }}
           </option>
         </DaisyInputSelect>
@@ -233,6 +233,9 @@
 const drawer = ref(false);
 const router = useRouter();
 const { theme, availableThemes } = useDaisyTheme();
+const filteredThemes = availableThemes.filter(
+  (v, i, a) => a.findIndex((v2) => v2 === v) === i,
+);
 
 router.afterEach(() => {
   drawer.value = false;

@@ -22,6 +22,7 @@
           :color="copied ? 'success' : 'primary'"
           size="sm"
           class="absolute right-0 top-0 mr-4 mt-2"
+          shape="square"
         >
           <Icon
             :name="
@@ -29,7 +30,7 @@
                 ? 'material-symbols:check-circle-outline'
                 : 'material-symbols:content-copy-outline'
             "
-            size="18px"
+            size="20px"
             class="text-neutral-content"
           />
         </DaisyButton>
