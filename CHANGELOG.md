@@ -1,3 +1,16 @@
+# [0.13.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.12.1...v0.13.0) (2023-08-29)
+
+
+### Bug Fixes
+
+* add PostCSS as a dependency ([558cae1](https://github.com/dienst3/nuxt-daisyui/commit/558cae1f5b4f10cbdc3bdaa334cbf33f7cafe0a7))
+* **drawer:** small type error ([da11d40](https://github.com/dienst3/nuxt-daisyui/commit/da11d409ab3b117b1f7d961c42ea140fc59f2134))
+
+
+### Features
+
+* **tooltip:** add code preview ([8017a1d](https://github.com/dienst3/nuxt-daisyui/commit/8017a1d5032e18b68e215d679781939ff3d2691a))
+
 ## [0.12.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.12.0...v0.12.1) (2023-07-07)
 
 
