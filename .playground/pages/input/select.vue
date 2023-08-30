@@ -80,6 +80,7 @@ const color = ref();
 
 const previewCode = computed(() => {
   const attrs = useComponentAttrs({
+    "v-model": ref("model"),
     title,
     error,
     required,
