@@ -1,39 +1,83 @@
 <template>
-  <h1>Drawer</h1>
-  <Preview>
-    <DaisyDrawer v-model="drawerOpen" class="h-96" end>
-      <template #side>
-        <ul class="menu p-4 w-80 h-full bg-base-200 text-base-content">
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
-        </ul>
-      </template>
-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Leo a diam
-      sollicitudin tempor id eu nisl. Convallis aenean et tortor at risus
-      viverra adipiscing at. Rhoncus aenean vel elit scelerisque mauris. Pretium
-      fusce id velit ut tortor pretium viverra. At augue eget arcu dictum varius
-      duis at consectetur lorem. Est ullamcorper eget nulla facilisi. Odio
-      euismod lacinia at quis risus sed vulputate odio. Gravida quis blandit
-      turpis cursus in. Faucibus a pellentesque sit amet porttitor eget. Nunc
-      pulvinar sapien et ligula. Erat nam at lectus urna duis convallis
-      convallis tellus.
-
-      <div class="flex flex-col items-center justify-center">
-        <DaisyButton
-          @click="drawerOpen = true"
-          title="Click to open Drawer"
-          color="primary"
-          class="relative"
-        >
-          Open Drawer
-        </DaisyButton>
-      </div>
-    </DaisyDrawer>
-  </Preview>
+  <PageTitle>Drawer</PageTitle>
+  <div class="flex flex-col 2xl:flex-row gap-8">
+    <PropsTable>
+      <PropsTableEntry name="open" description="Fixes the drawer open.">
+        <DaisyInputToggle v-model="open" size="sm" />
+      </PropsTableEntry>
+      <PropsTableEntry name="end" description="Move the drawer to the end.">
+        <DaisyInputToggle v-model="end" size="sm" />
+      </PropsTableEntry>
+      <PropsTableEntry
+        name="responsive"
+        description="Fixes the drawer open on larger screens."
+      >
+        <DaisyInputToggle v-model="responsive" size="sm" />
+      </PropsTableEntry>
+    </PropsTable>
+    <Preview :code="previewCode">
+      <DaisyDrawer
+        v-model="model"
+        class="h-96"
+        :open="open"
+        :end="end"
+        :responsive="responsive"
+      >
+        <template #side>
+          <div class="w-80 h-full bg-base-200 text-base-content">
+            <DaisyMenu>
+              <DaisyMenuItem>One</DaisyMenuItem>
+              <DaisyMenuItem>Two</DaisyMenuItem>
+            </DaisyMenu>
+          </div>
+        </template>
+        <div class="flex justify-center mt-8">
+          <DaisyButton
+            @click="model = true"
+            title="Click to open Drawer"
+            color="primary"
+            class="relative"
+          >
+            Open Drawer
+          </DaisyButton>
+        </div>
+      </DaisyDrawer>
+    </Preview>
+  </div>
 </template>
 
 <script setup lang="ts">
-const drawerOpen = ref(false);
+const model = ref(false);
+const open = ref(false);
+const end = ref(true);
+const responsive = ref(false);
+
+const previewCode = computed(() => {
+  const attrs = useComponentAttrs({
+    "v-model": ref("model"),
+    open,
+    end,
+    responsive,
+  });
+
+  return `\
+<DaisyDrawer${attrs.value}>
+  <template #side>
+    <div class="w-80 h-full bg-base-200 text-base-content">
+      <DaisyMenu>
+        <DaisyMenuItem>One</DaisyMenuItem>
+        <DaisyMenuItem>Two</DaisyMenuItem>
+      </DaisyMenu>
+    </div>
+  </template>
+  <DaisyButton
+    @click="model = true"
+    title="Click to open Drawer"
+    color="primary"
+    class="relative"
+  >
+    Open Drawer
+  </DaisyButton>
+</DaisyDrawer>`;
+});
 </script>

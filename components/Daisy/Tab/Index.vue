@@ -15,9 +15,7 @@ export interface TabSettings {
 
 const props = defineProps<{
   modelValue?: string;
-  boxed?: boolean;
-  bordered?: boolean;
-  lifted?: boolean;
+  type?: "boxed" | "bordered" | "lifted";
   size?: "xs" | "sm" | "md" | "lg";
 }>();
 const emit = defineEmits<{
@@ -25,12 +23,12 @@ const emit = defineEmits<{
 }>();
 
 const classes = computed(() => ({
-  "tabs-boxed": props.boxed,
+  "tabs-boxed": props.type === "boxed",
 }));
 
 provide<TabSettings>("daisy-tab", {
-  bordered: computed(() => props.bordered ?? false),
-  lifted: computed(() => props.lifted ?? false),
+  bordered: computed(() => props.type === "bordered"),
+  lifted: computed(() => props.type === "lifted"),
   size: computed(() => props.size ?? "md"),
   selected: computed(() => props.modelValue ?? ""),
   select: (name) => emit("update:modelValue", name),

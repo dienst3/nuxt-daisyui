@@ -1,13 +1,13 @@
 <template>
   <div class="flex-1">
-    <DaisyTab v-model="activeTab" lifted class="-mb-px relative z-10">
+    <DaisyTab v-model="activeTab" type="lifted" class="-mb-px relative z-10">
       <DaisyTabEntry name="preview" title="Preview" />
       <DaisyTabEntry v-if="code" name="vue" title="Vue" />
     </DaisyTab>
     <div class="grid relative bg-base-300 rounded-b-box rounded-tr-box">
       <div
         v-if="activeTab === 'preview'"
-        class="flex preview border-base-300 bg-base-100 rounded-b-box rounded-tr-box min-h-[8rem] w-4xl border p-4 flex-wrap items-center justify-center"
+        class="flex preview border-base-300 bg-base-100 rounded-b-box rounded-tr-box min-h-[8rem] w-4xl border p-4 flex-wrap items-center justify-center flex-col"
       >
         <slot />
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="form-control">
-    <label v-if="title" class="label">
+    <label v-if="title || required" class="label">
       <span class="label-text text-base font-bold">{{ title }}</span>
       <span v-if="required" class="label-text-alt text-error text-lg">*</span>
     </label>

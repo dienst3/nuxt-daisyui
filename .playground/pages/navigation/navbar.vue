@@ -1,34 +1,35 @@
 <template>
-  <h1>NavBar</h1>
-
-  <DaisyNavBar color="primary">
-    <template #start>hello</template>
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-    <template #end>!</template>
-  </DaisyNavBar>
-
-  <DaisyNavBar color="secondary">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="accent">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="neutral">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="base">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="info">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="success">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="warning">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
-  <DaisyNavBar color="error">
-    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </DaisyNavBar>
+  <PageTitle>NavBar</PageTitle>
+  <div class="flex flex-col 2xl:flex-row gap-8">
+    <PropsTable>
+      <PropsTableEntry name="color" description="The color of the NavBar.">
+        <PropsTableCommonColor v-model="color" />
+      </PropsTableEntry>
+    </PropsTable>
+    <Preview :code="previewCode">
+      <DaisyNavBar :color="color">
+        <template #start>Start</template>
+        <div>Middle</div>
+        <template #end>End</template>
+      </DaisyNavBar>
+    </Preview>
+  </div>
 </template>
+
+<script setup lang="ts">
+const color = ref();
+
+const previewCode = computed(() => {
+  const attrs = useComponentAttrs({
+    color,
+  });
+
+  return `\
+<DaisyNavBar${attrs.value}>
+  <template #start>Start</template>
+  <div>Middle</div>
+  <template #end>End</template>
+</DaisyNavBar>
+`;
+});
+</script>
