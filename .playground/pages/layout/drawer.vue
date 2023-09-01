@@ -25,7 +25,7 @@
       >
         <template #side>
           <div class="w-80 h-full bg-base-200 text-base-content">
-            <DaisyMenu rounded>
+            <DaisyMenu>
               <DaisyMenuItem>One</DaisyMenuItem>
               <DaisyMenuItem>Two</DaisyMenuItem>
             </DaisyMenu>
@@ -64,7 +64,7 @@ const previewCode = computed(() => {
 <DaisyDrawer${attrs.value}>
   <template #side>
     <div class="w-80 h-full bg-base-200 text-base-content">
-      <DaisyMenu rounded>
+      <DaisyMenu>
         <DaisyMenuItem>One</DaisyMenuItem>
         <DaisyMenuItem>Two</DaisyMenuItem>
       </DaisyMenu>

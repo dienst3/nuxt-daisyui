@@ -11,7 +11,6 @@ interface Props {
   size?: "xs" | "sm" | "md" | "lg";
   horizontal?: boolean;
   responsive?: boolean;
-  rounded?: boolean;
 }
 
 const props = defineProps<Props>();
@@ -23,6 +22,5 @@ const classes = computed(() => ({
   "menu-lg": props.size === "lg",
   "menu-horizontal": props.horizontal === true,
   "lg:menu-horizontal": props.responsive === true,
-  "rounded-box": props.rounded === true,
 }));
 </script>
