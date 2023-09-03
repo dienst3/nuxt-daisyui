@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.13.0...v0.14.0) (2023-09-03)
+
+
+### Features
+
+* add dropdown component ([a4caa43](https://github.com/dienst3/nuxt-daisyui/commit/a4caa43f02339b0c4730e8a2b149f30c2b9cc9cd))
+
 # [0.13.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.12.1...v0.13.0) (2023-08-29)
 
 
