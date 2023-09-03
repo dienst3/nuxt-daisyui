@@ -36,9 +36,7 @@
             Actions
             <template #children>
               <DaisyMenuItem to="/actions/button">Button</DaisyMenuItem>
-              <DaisyMenuItem to="/actions/dropdown" disabled>
-                Dropdown
-              </DaisyMenuItem>
+              <DaisyMenuItem to="/actions/dropdown">Dropdown</DaisyMenuItem>
               <DaisyMenuItem to="/actions/modal" disabled>Modal</DaisyMenuItem>
               <DaisyMenuItem to="/actions/swap" disabled>Swap</DaisyMenuItem>
             </template>
