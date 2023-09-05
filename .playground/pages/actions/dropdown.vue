@@ -35,12 +35,12 @@
     </PropsTable>
     <Preview :code="previewCode">
       <DaisyDropdown
-        :label="label"
         :end="end"
         :direction="direction"
         :hover="hover"
         :open="open"
       >
+        <template #label>{{ label }}</template>
         <DaisyMenu class="p-2 shadow bg-base-100 rounded-box w-52">
           <DaisyMenuItem>Item 1</DaisyMenuItem>
           <DaisyMenuItem>Item 2</DaisyMenuItem>
@@ -58,10 +58,11 @@ const hover = ref(false);
 const open = ref(false);
 
 const previewCode = computed(() => {
-  const attrs = useComponentAttrs({ label, end, direction, hover, open });
+  const attrs = useComponentAttrs({ end, direction, hover, open });
 
   return `\
 <DaisyDropdown${attrs.value}>
+  <template #label>${label.value}</template>
   <DaisyMenu class="p-2 shadow bg-base-100 rounded-box w-52">
     <DaisyMenuItem>Item 1</DaisyMenuItem>
     <DaisyMenuItem>Item 2</DaisyMenuItem>
