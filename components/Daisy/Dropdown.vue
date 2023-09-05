@@ -1,6 +1,8 @@
 <template>
   <div class="dropdown" :class="classes">
-    <label tabindex="0">{{ label }}</label>
+    <label tabindex="0">
+      <slot name="label" />
+    </label>
     <div tabindex="0" class="dropdown-content">
       <slot />
     </div>
@@ -9,7 +11,6 @@
 
 <script lang="ts" setup>
 interface Props {
-  label: string;
   end?: boolean;
   direction?: "top" | "bottom" | "left" | "right";
   hover?: boolean;
