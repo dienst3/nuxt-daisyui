@@ -1,3 +1,15 @@
+# [0.15.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.14.0...v0.15.0) (2023-09-10)
+
+
+### Bug Fixes
+
+* **ci:** change incompatible node versions ([e70bbfc](https://github.com/dienst3/nuxt-daisyui/commit/e70bbfcdf82bdb83fe126451f675896beda0a2f8))
+
+
+### Features
+
+* add card component ([09f66c2](https://github.com/dienst3/nuxt-daisyui/commit/09f66c25673d2c0d028d0bd4adf5b7b16388bdeb))
+
 # [0.14.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.13.0...v0.14.0) (2023-09-03)
 
 
