@@ -57,7 +57,7 @@
                 Avatar
               </DaisyMenuItem>
               <DaisyMenuItem to="/display/badge" disabled>Badge</DaisyMenuItem>
-              <DaisyMenuItem to="/display/card" disabled>Card</DaisyMenuItem>
+              <DaisyMenuItem to="/display/card">Card</DaisyMenuItem>
               <DaisyMenuItem to="/display/carousel" disabled>
                 Carousel
               </DaisyMenuItem>
