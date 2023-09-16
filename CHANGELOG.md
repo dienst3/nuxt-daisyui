@@ -1,3 +1,10 @@
+# [0.16.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.15.0...v0.16.0) (2023-09-16)
+
+
+### Features
+
+* add loading component ([e420797](https://github.com/dienst3/nuxt-daisyui/commit/e420797d60243fa9a94c55191538d7f069dc7806))
+
 # [0.15.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.14.0...v0.15.0) (2023-09-10)
 
 
