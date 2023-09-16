@@ -69,9 +69,7 @@
                 Countdown
               </DaisyMenuItem>
               <DaisyMenuItem to="/display/kbd" disabled>Kbd</DaisyMenuItem>
-              <DaisyMenuItem to="/display/loading" disabled>
-                Loading
-              </DaisyMenuItem>
+              <DaisyMenuItem to="/display/loading">Loading</DaisyMenuItem>
               <DaisyMenuItem to="/display/progress" disabled>
                 Progress
               </DaisyMenuItem>
