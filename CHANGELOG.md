@@ -1,3 +1,10 @@
+## [0.16.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.16.0...v0.16.1) (2023-09-26)
+
+
+### Bug Fixes
+
+* remove themes ([61b6671](https://github.com/dienst3/nuxt-daisyui/commit/61b6671b2e76d250bbded503a125aef9e7ae76b9))
+
 # [0.16.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.15.0...v0.16.0) (2023-09-16)
 
 
