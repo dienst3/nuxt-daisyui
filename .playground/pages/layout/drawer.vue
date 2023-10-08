@@ -14,6 +14,12 @@
       >
         <DaisyInputToggle v-model="responsive" size="sm" />
       </PropsTableEntry>
+      <PropsTableEntry
+        name="absolute"
+        description="Position the drawer absolutely."
+      >
+        <DaisyInputToggle v-model="absolute" size="sm" />
+      </PropsTableEntry>
     </PropsTable>
     <Preview :code="previewCode">
       <DaisyDrawer
@@ -22,6 +28,7 @@
         :open="open"
         :end="end"
         :responsive="responsive"
+        :absolute="absolute"
       >
         <template #side>
           <div class="w-80 h-full bg-base-200 text-base-content">
@@ -49,8 +56,9 @@
 <script setup lang="ts">
 const model = ref(false);
 const open = ref(false);
-const end = ref(true);
+const end = ref(false);
 const responsive = ref(false);
+const absolute = ref(true);
 
 const previewCode = computed(() => {
   const attrs = useComponentAttrs({
@@ -58,6 +66,7 @@ const previewCode = computed(() => {
     open,
     end,
     responsive,
+    absolute,
   });
 
   return `\

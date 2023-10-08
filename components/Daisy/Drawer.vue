@@ -9,7 +9,7 @@
     <div class="drawer-content">
       <slot />
     </div>
-    <div class="drawer-side z-20">
+    <div class="drawer-side z-20" :class="sideClasses">
       <label class="drawer-overlay" @click="toggle"></label>
       <slot name="side" />
     </div>
@@ -22,6 +22,7 @@ interface Props {
   open?: boolean;
   end?: boolean;
   responsive?: boolean;
+  absolute?: boolean;
 }
 
 const props = defineProps<Props>();
@@ -37,5 +38,10 @@ const classes = computed(() => ({
   "drawer-end": props.end === true,
   "drawer-open": props.open === true,
   "lg:drawer-open": props.responsive === true,
+}));
+
+const sideClasses = computed(() => ({
+  "absolute": props.absolute === true,
+  "h-full": props.absolute === true,
 }));
 </script>
