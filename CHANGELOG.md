@@ -1,3 +1,16 @@
+# [0.17.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.16.1...v0.17.0) (2023-10-08)
+
+
+### Bug Fixes
+
+* **button:** allow setting the color of the link variant ([89ac337](https://github.com/dienst3/nuxt-daisyui/commit/89ac33734898e5f84b0ae6cf49c65aa5a7322fde))
+* **button:** don't color the text when it isn't a button ([1e7ce9c](https://github.com/dienst3/nuxt-daisyui/commit/1e7ce9ccd7911b388b8591f3deff52675ba468f2))
+
+
+### Features
+
+* **inputSelect:** add rounded border option ([bb06b21](https://github.com/dienst3/nuxt-daisyui/commit/bb06b21996b2cff070d1c838492eb45f9d3ce71a))
+
 ## [0.16.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.16.0...v0.16.1) (2023-09-26)
 
 
