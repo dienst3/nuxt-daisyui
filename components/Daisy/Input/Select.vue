@@ -30,6 +30,7 @@ const props = defineProps<{
   disabled?: boolean;
   bordered?: boolean;
   ghost?: boolean;
+  rounded?: boolean;
   size?: "xs" | "sm" | "md" | "lg";
   color?:
     | "primary"
@@ -49,6 +50,7 @@ const classes = computed(() => ({
   "select-sm": props.size === "sm",
   "select-md": props.size === "md",
   "select-lg": props.size === "lg",
+  "rounded-box": props.rounded,
   "select-bordered": props.bordered,
   "select-ghost": props.ghost,
   "select-primary": props.color === "primary",

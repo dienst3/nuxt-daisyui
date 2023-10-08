@@ -42,6 +42,12 @@
       <PropsTableEntry name="ghost" description="Style the input as a ghost.">
         <DaisyInputToggle v-model="ghost" size="sm" />
       </PropsTableEntry>
+      <PropsTableEntry
+        name="rounded"
+        description="Add additional rounding to the input."
+      >
+        <DaisyInputToggle v-model="rounded" size="sm" />
+      </PropsTableEntry>
       <PropsTableEntry name="size" description="Set the size of the input.">
         <PropsTableCommonSize v-model="size" />
       </PropsTableEntry>
@@ -57,6 +63,7 @@
         :disabled="disabled"
         :bordered="bordered"
         :ghost="ghost"
+        :rounded="rounded"
         :size="size"
         :color="color"
       >
@@ -75,6 +82,7 @@ const required = ref(false);
 const disabled = ref(false);
 const bordered = ref(false);
 const ghost = ref(false);
+const rounded = ref(false);
 const size = ref();
 const color = ref();
 
@@ -87,6 +95,7 @@ const previewCode = computed(() => {
     disabled,
     bordered,
     ghost,
+    rounded,
     size,
     color,
   });
