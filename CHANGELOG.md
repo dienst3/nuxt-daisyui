@@ -1,3 +1,10 @@
+# [0.20.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.19.0...v0.20.0) (2023-10-15)
+
+
+### Features
+
+* **button:** expose mouse event ([5830dd5](https://github.com/dienst3/nuxt-daisyui/commit/5830dd5c7526f31b320170811b7eefe01fc644de))
+
 # [0.19.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.18.0...v0.19.0) (2023-10-15)
 
 
