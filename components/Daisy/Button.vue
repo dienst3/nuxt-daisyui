@@ -6,7 +6,7 @@
     :disabled="disabled || undefined"
     :type="type"
     :title="title"
-    @click="$emit('click')"
+    @click="(e) => $emit('click', e)"
   >
     <slot />
   </button>
@@ -51,7 +51,7 @@ const props = defineProps<{
   shape?: "circle" | "square";
 }>();
 defineEmits<{
-  (eventName: "click", value: void): void;
+  (eventName: "click", value: MouseEvent): void;
 }>();
 
 const classes = computed(() => ({
