@@ -1,3 +1,10 @@
+# [0.18.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.17.0...v0.18.0) (2023-10-08)
+
+
+### Features
+
+* **drawer:** add absolute option ([07b2d2d](https://github.com/dienst3/nuxt-daisyui/commit/07b2d2d6aaf0caaae97be756c0da6db3e858928a))
+
 # [0.17.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.16.1...v0.17.0) (2023-10-08)
 
 
