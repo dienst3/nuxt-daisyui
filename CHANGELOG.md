@@ -1,3 +1,10 @@
+# [0.19.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.18.0...v0.19.0) (2023-10-15)
+
+
+### Features
+
+* **modal:** add modal component ([3f888fe](https://github.com/dienst3/nuxt-daisyui/commit/3f888fe118d3c1f790089112bafd9ee3ddbc1661))
+
 # [0.18.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.17.0...v0.18.0) (2023-10-08)
 
 
