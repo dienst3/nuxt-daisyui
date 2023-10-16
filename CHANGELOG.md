@@ -1,3 +1,10 @@
+# [0.21.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.20.0...v0.21.0) (2023-10-16)
+
+
+### Features
+
+* **swap:** add swap component ([5f3b786](https://github.com/dienst3/nuxt-daisyui/commit/5f3b7869eee5e9206fd75ac37567361f25412380))
+
 # [0.20.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.19.0...v0.20.0) (2023-10-15)
 
 
