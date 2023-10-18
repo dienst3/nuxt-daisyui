@@ -1,3 +1,10 @@
+# [0.22.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.21.0...v0.22.0) (2023-10-18)
+
+
+### Features
+
+* **avatar:** add avatar component ([2482592](https://github.com/dienst3/nuxt-daisyui/commit/24825926d2f8cb7a8a46d1bf3b71c05be9c5fc26))
+
 # [0.21.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.20.0...v0.21.0) (2023-10-16)
 
 
