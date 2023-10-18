@@ -1,10 +1,10 @@
 <template>
   <div class="avatar" :class="classes">
-    <div v-if="src" class="rounded" :class="innerClasses">
+    <div v-if="src" :class="innerClasses">
       <img :src="src" />
     </div>
     <div v-else :class="innerClasses">
-      <span class="text-3xl">{{ placeholder }}</span>
+      <span>{{ placeholder }}</span>
     </div>
   </div>
 </template>
