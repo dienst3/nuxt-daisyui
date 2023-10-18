@@ -53,9 +53,7 @@
                 Accordion
               </DaisyMenuItem>
               <DaisyMenuItem to="/display/alert">Alert</DaisyMenuItem>
-              <DaisyMenuItem to="/display/avatar" disabled>
-                Avatar
-              </DaisyMenuItem>
+              <DaisyMenuItem to="/display/avatar">Avatar</DaisyMenuItem>
               <DaisyMenuItem to="/display/badge" disabled>Badge</DaisyMenuItem>
               <DaisyMenuItem to="/display/card">Card</DaisyMenuItem>
               <DaisyMenuItem to="/display/carousel" disabled>
