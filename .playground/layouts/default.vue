@@ -148,9 +148,7 @@
               <DaisyMenuItem to="/navigation/pagination" disabled>
                 Pagination
               </DaisyMenuItem>
-              <DaisyMenuItem to="/navigation/steps" disabled>
-                Steps
-              </DaisyMenuItem>
+              <DaisyMenuItem to="/navigation/steps">Steps</DaisyMenuItem>
               <DaisyMenuItem to="/navigation/tab">Tab</DaisyMenuItem>
             </template>
           </DaisyMenuItem>
