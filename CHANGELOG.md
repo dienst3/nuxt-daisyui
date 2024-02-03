@@ -1,3 +1,10 @@
+# [0.24.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.23.4...v0.24.0) (2024-2-3)
+
+
+### Features
+
+* **badge:** add badge component ([dbd2c05](https://github.com/dienst3/nuxt-daisyui/commit/dbd2c053f05f17dbf67542585db2ee5d0a059a2d))
+
 ## [0.23.4](https://github.com/dienst3/nuxt-daisyui/compare/v0.23.3...v0.23.4) (2024-2-3)
 
 ## [0.23.3](https://github.com/dienst3/nuxt-daisyui/compare/v0.23.2...v0.23.3) (2023-11-22)
