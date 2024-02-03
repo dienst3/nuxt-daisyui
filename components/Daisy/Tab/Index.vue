@@ -6,10 +6,7 @@
 
 <script lang="ts" setup>
 export interface TabSettings {
-  bordered: Ref<boolean>;
-  lifted: Ref<boolean>;
   selected: Ref<string>;
-  size: Ref<"xs" | "sm" | "md" | "lg">;
   select: (name: string) => void;
 }
 
@@ -24,12 +21,15 @@ const emit = defineEmits<{
 
 const classes = computed(() => ({
   "tabs-boxed": props.type === "boxed",
+  "tabs-bordered": props.type === "bordered",
+  "tabs-lifted": props.type === "lifted",
+  "tabs-lg": props.size === "lg",
+  "tabs-md": props.size === "md",
+  "tabs-sm": props.size === "sm",
+  "tabs-xs": props.size === "xs",
 }));
 
 provide<TabSettings>("daisy-tab", {
-  bordered: computed(() => props.type === "bordered"),
-  lifted: computed(() => props.type === "lifted"),
-  size: computed(() => props.size ?? "md"),
   selected: computed(() => props.modelValue ?? ""),
   select: (name) => emit("update:modelValue", name),
 });

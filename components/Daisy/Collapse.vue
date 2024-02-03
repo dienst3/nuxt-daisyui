@@ -34,7 +34,7 @@ const classes = computed(() => ({
   "collapse-plus": props.indicator && props.toggle,
   "collapse-arrow": props.indicator && !props.toggle,
   "border": props.bordered,
-  "border-primary-focus": props.bordered,
+  "border-[color-mix(in_oklab,oklch(var(--p)),black_7%)]": props.bordered,
   "bg-primary": props.background,
   "text-primary-content": props.background,
   "rounded-box": props.rounded,

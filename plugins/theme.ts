@@ -17,7 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     });
 
     watch(theme, (newTheme) => {
-      if (newTheme !== localStorage.getItem("daisy-theme") ?? undefined) {
+      if (newTheme !== (localStorage.getItem("daisy-theme") ?? undefined)) {
         if (newTheme) {
           localStorage.setItem("daisy-theme", newTheme);
         } else {
@@ -25,7 +25,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         }
       }
 
-      if (newTheme !== doc.getAttribute("data-theme") ?? undefined) {
+      if (newTheme !== (doc.getAttribute("data-theme") ?? undefined)) {
         if (newTheme) {
           doc.setAttribute("data-theme", newTheme);
         } else {

@@ -29,10 +29,12 @@ const innerClasses = computed(() => ({
   "rounded-xl": props.round !== true,
   "rounded-full": props.round === true,
   [`w-${props.width || "24"}`]: true,
-  "bg-neutral-focus": !props.color,
-  "bg-primary-focus": props.color === "primary",
-  "bg-secondary-focus": props.color === "secondary",
-  "bg-accent-focus": props.color === "accent",
+  "bg-[color-mix(in_oklab,oklch(var(--n)),black_7%)]": !props.color,
+  "bg-[color-mix(in_oklab,oklch(var(--p)),black_7%)]":
+    props.color === "primary",
+  "bg-[color-mix(in_oklab,oklch(var(--s)),black_7%)]":
+    props.color === "secondary",
+  "bg-[color-mix(in_oklab,oklch(var(--a)),black_7%)]": props.color === "accent",
   "text-neutral-content": !props.color,
   "text-primary-content": props.color === "primary",
   "text-secondary-content": props.color === "secondary",

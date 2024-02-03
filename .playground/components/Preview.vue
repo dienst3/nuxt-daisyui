@@ -60,10 +60,10 @@ const {
 .preview {
   background-image: repeating-linear-gradient(
     45deg,
-    hsl(var(--b1)),
-    hsl(var(--b1)) 13px,
-    hsl(var(--b2)) 13px,
-    hsl(var(--b2)) 14px
+    oklch(var(--b1)),
+    oklch(var(--b1)) 13px,
+    oklch(var(--b2)) 13px,
+    oklch(var(--b2)) 14px
   );
 }
 </style>
@@ -71,20 +71,20 @@ const {
 <style>
 .hljs {
   padding: 0 !important;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+  background-color: oklch(var(--n) / oklch(--tw-bg-opacity));
 }
 
 .hljs,
 .hljs-subst {
-  color: hsl(var(--nc));
+  color: oklch(var(--nc));
 }
 
 .hljs-name {
-  color: hsl(var(--p));
+  color: oklch(var(--p));
 }
 
 .hljs-attr {
-  color: hsl(var(--sf));
+  color: oklch(var(--sf));
 }
 
 .hljs-string,
@@ -92,6 +92,6 @@ const {
 .hljs-selector-class,
 .hljs-template-variable,
 .hljs-deletion {
-  color: hsl(var(--s));
+  color: oklch(var(--s));
 }
 </style>
