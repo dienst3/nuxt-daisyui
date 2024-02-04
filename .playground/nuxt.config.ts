@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   extends: "..",
-  modules: ["@vueuse/nuxt"],
+  modules: ["@vueuse/nuxt", "@nuxt/image"],
   ssr: false,
   typescript: {
     includeWorkspace: true,
