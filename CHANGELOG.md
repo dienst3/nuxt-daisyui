@@ -1,3 +1,10 @@
+## [0.25.1](https://github.com/dienst3/nuxt-daisyui/compare/v0.25.0...v0.25.1) (2024-2-4)
+
+
+### Bug Fixes
+
+* **playground:** fix SSR rendering ([2b8f10e](https://github.com/dienst3/nuxt-daisyui/commit/2b8f10e37cba63e246ffbd0dd738a168fa4f0f05))
+
 # [0.25.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.24.0...v0.25.0) (2024-2-4)
 
 
