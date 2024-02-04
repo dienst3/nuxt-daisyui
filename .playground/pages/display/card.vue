@@ -66,6 +66,7 @@
         :img-full="imgFull"
         :img-side="imgSide"
       >
+        <template #title>This is the title</template>
         This is a card!
         <template #actions>
           <DaisyButton title="Button">Button</DaisyButton>
@@ -101,6 +102,7 @@ const previewCode = computed(() => {
 
   return `\
 <DaisyCard${attrs.value}>
+  <template #title>This is the title</template>
   This is a card!
   <template #actions>
     <DaisyButton title="Button">Button</DaisyButton>
