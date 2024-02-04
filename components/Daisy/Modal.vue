@@ -6,7 +6,7 @@
     @cancel="cancel"
     @close="visible = false"
   >
-    <div v-if="visible" class="modal-box">
+    <div v-if="visible" class="modal-box" :class="classesBox">
       <form v-if="!uncloseable" method="dialog">
         <DaisyButton
           :title="closeTitle || 'Close dialog'"
@@ -42,6 +42,7 @@ const props = defineProps<{
   responsive?: boolean;
   uncloseable?: boolean;
   closeTitle?: string;
+  width?: "large" | "huge";
 }>();
 
 const cancel = (e: Event) => {
@@ -55,6 +56,12 @@ const classes = computed(() => ({
   "modal-middle": props.location === "middle",
   "modal-bottom": props.location === "bottom" || props.responsive,
   "sm:modal-middle": props.responsive,
+}));
+
+const classesBox = computed(() => ({
+  "w-11/12": props.width === "large" || props.width === "huge",
+  "max-w-4xl": props.width === "large",
+  "max-w-7xl": props.width === "huge",
 }));
 
 const show = () => {

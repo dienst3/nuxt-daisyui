@@ -48,6 +48,13 @@
           bordered
         />
       </PropsTableEntry>
+      <PropsTableEntry name="width" description="The width of the modal.">
+        <DaisyInputSelect v-model="width" bordered size="sm">
+          <option value="">Unset</option>
+          <option value="large">Large</option>
+          <option value="huge">Huge</option>
+        </DaisyInputSelect>
+      </PropsTableEntry>
     </PropsTable>
     <Preview :code="previewCode">
       <DaisyModal
@@ -57,6 +64,7 @@
         :responsive="responsive"
         :uncloseable="uncloseable"
         :close-title="closeTitle"
+        :width="width"
       >
         <p>This is the modal content!</p>
         <template #actions>
@@ -81,6 +89,7 @@ const location = ref();
 const responsive = ref(false);
 const uncloseable = ref(false);
 const closeTitle = ref("Dismiss dialog");
+const width = ref();
 
 const previewCode = computed(() => {
   const attrs = useComponentAttrs({
@@ -90,6 +99,7 @@ const previewCode = computed(() => {
     responsive,
     uncloseable,
     "close-title": closeTitle,
+    width,
   });
 
   return `\
