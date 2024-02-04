@@ -34,7 +34,9 @@
             class="text-neutral-content"
           />
         </DaisyButton>
-        <highlightjs language="xml" :code="code" />
+        <ClientOnly fallback-tag="div" fallback="Generating code..">
+          <highlightjs language="xml" :code="code" />
+        </ClientOnly>
       </div>
     </div>
   </div>

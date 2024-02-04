@@ -18,7 +18,7 @@
             />
           </DaisyButton>
           <NuxtLink to="https://nuxt.com" title="Nuxt" target="_blank">
-            <NuxtImg src="/icons/nuxt.png" alt="Nuxt" class="h-8" />
+            <NuxtImg src="/icons/nuxt.png" alt="Nuxt" height="32" class="h-8" />
           </NuxtLink>
           <Icon
             name="material-symbols:favorite-rounded"
@@ -26,7 +26,12 @@
             class="text-primary mx-2"
           />
           <NuxtLink to="https://daisyui.com" title="DaisyUI" target="_blank">
-            <NuxtImg src="/icons/daisyui.png" alt="DaisyUI" class="h-8" />
+            <NuxtImg
+              src="/icons/daisyui.png"
+              alt="DaisyUI"
+              height="32"
+              class="h-8"
+            />
           </NuxtLink>
           <code class="ml-4 px-2 py-1 bg-base-200 max-sm:hidden rounded-xl">
             @dienst/nuxt-daisyui
