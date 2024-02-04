@@ -1,3 +1,10 @@
+# [0.25.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.24.0...v0.25.0) (2024-2-4)
+
+
+### Features
+
+* **modal:** allow setting of different widths ([85e6967](https://github.com/dienst3/nuxt-daisyui/commit/85e696762c6d7b7c457455022bb2b66c36ccc8f5))
+
 # [0.24.0](https://github.com/dienst3/nuxt-daisyui/compare/v0.23.4...v0.24.0) (2024-2-3)
 
 
