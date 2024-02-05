@@ -1,3 +1,5 @@
+## [0.25.6](https://github.com/dienst3/nuxt-daisyui/compare/v0.25.5...v0.25.6) (2024-2-5)
+
 ## [0.25.5](https://github.com/dienst3/nuxt-daisyui/compare/v0.25.4...v0.25.5) (2024-2-5)
 
 ## [0.25.4](https://github.com/dienst3/nuxt-daisyui/compare/v0.25.3...v0.25.4) (2024-2-5)
