@@ -5,6 +5,7 @@
   "main": "./nuxt.config.ts",
   "repository": "git@github.com:dienst3/nuxt-daisyui.git",
   "author": "Dany Sluijk <me@dany.dev>",
+  "license": "MIT",
   "scripts": {
     "dev": "nuxi prepare & nuxi dev .playground",
     "build": "nuxi build .playground",
