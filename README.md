@@ -1,11 +1,7 @@
 <div align="center">
-  <a href="https://nuxt.com" title="Nuxt" target="_blank">
-    <img src="./.playground/public/icons/nuxt.png" alt="Nuxt" height="100px" />
-  </a>
+  <a href="https://nuxt.com" title="Nuxt" target="_blank"><img src="./.playground/public/icons/nuxt.png" alt="Nuxt" height="100px" /></a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://daisyui.com" title="DaisyUI" target="_blank">
-    <img src="./.playground/public/icons/daisyui.png" alt="DaisyUI" height="100px" />
-  </a>
+  <a href="https://daisyui.com" title="DaisyUI" target="_blank"><img src="./.playground/public/icons/daisyui.png" alt="DaisyUI" height="100px" /></a>
 
   <h4>Put DaisyUI components in your Nuxt project with ease!</h4>
 </div>
