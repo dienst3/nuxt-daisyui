@@ -34,7 +34,7 @@
             />
           </NuxtLink>
           <code class="ml-4 px-2 py-1 bg-base-200 max-sm:hidden rounded-xl">
-            @dienst/nuxt-daisyui
+            nuxt-daisyui
           </code>
         </DaisyNavBar>
         <DaisyMenu class="h-full flex-nowrap overflow-y-auto px-4 pb-2">
@@ -216,7 +216,7 @@
             </DaisyButton>
             <DaisyButton
               type="link"
-              to="https://www.npmjs.com/@dienst3/nuxt-daisyui"
+              to="https://www.npmjs.com/package/nuxt-daisyui"
               title="Find us on NPM"
               target="_blank"
               shape="circle"

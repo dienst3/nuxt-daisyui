@@ -1,7 +1,7 @@
 {
-  "name": "@dienst3/nuxt-daisyui",
+  "name": "nuxt-daisyui",
   "type": "module",
-  "version": "0.1.2",
+  "version": "0.25.2",
   "main": "./nuxt.config.ts",
   "repository": "git@github.com:dienst3/nuxt-daisyui.git",
   "author": "Dany Sluijk <me@dany.dev>",
