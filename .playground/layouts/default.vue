@@ -17,25 +17,29 @@
               class="text-secondary-content"
             />
           </DaisyButton>
-          <NuxtLink to="https://nuxt.com" title="Nuxt" target="_blank">
-            <NuxtImg src="/icons/nuxt.png" alt="Nuxt" height="32" class="h-8" />
-          </NuxtLink>
-          <Icon
-            name="material-symbols:favorite-rounded"
-            size="32px"
-            class="text-primary mx-2"
-          />
-          <NuxtLink to="https://daisyui.com" title="DaisyUI" target="_blank">
-            <NuxtImg
-              src="/icons/daisyui.png"
-              alt="DaisyUI"
-              height="32"
-              class="h-8"
+          <div class="w-full justify-center">
+            <NuxtLink to="https://nuxt.com" title="Nuxt" target="_blank">
+              <NuxtImg
+                src="/icons/nuxt.png"
+                alt="Nuxt"
+                height="32"
+                class="h-8"
+              />
+            </NuxtLink>
+            <Icon
+              name="material-symbols:favorite-rounded"
+              size="32px"
+              class="text-primary mx-2"
             />
-          </NuxtLink>
-          <code class="ml-4 px-2 py-1 bg-base-200 max-sm:hidden rounded-xl">
-            nuxt-daisyui
-          </code>
+            <NuxtLink to="https://daisyui.com" title="DaisyUI" target="_blank">
+              <NuxtImg
+                src="/icons/daisyui.png"
+                alt="DaisyUI"
+                height="32"
+                class="h-8"
+              />
+            </NuxtLink>
+          </div>
         </DaisyNavBar>
         <DaisyMenu class="h-full flex-nowrap overflow-y-auto px-4 pb-2">
           <DaisyMenuItem to="/">
@@ -188,56 +192,57 @@
       </div>
     </template>
 
-    <div class="lg:ml-4">
-      <DaisyNavBar class="sticky top-0 z-20">
-        <template #start>
+    <DaisyNavBar class="sticky top-0 z-20">
+      <template #start>
+        <DaisyButton
+          @click="drawer = !drawer"
+          title="Click to close drawer"
+          outline
+          ghost
+          class="mr-4 lg:hidden"
+        >
+          <Icon name="material-symbols:menu" size="24px" />
+        </DaisyButton>
+        <h1 class="text-primary text-4xl font-bold ml-2 max-md:hidden">
+          DaisyUI for Nuxt 3
+        </h1>
+      </template>
+      <template #end>
+        <div class="join mx-3">
           <DaisyButton
-            @click="drawer = !drawer"
-            title="Click to close drawer"
-            outline
-            ghost
-            class="mr-4 lg:hidden"
+            type="link"
+            to="https://github.com/dienst3/nuxt-daisyui"
+            title="Find us on GitHub"
+            target="_blank"
+            shape="circle"
+            color="secondary"
+            class="join-item"
           >
-            <Icon name="material-symbols:menu" size="24px" />
+            <Icon name="mdi:github" size="24px" />
           </DaisyButton>
-        </template>
-        <template #end>
-          <div class="join mx-3">
-            <DaisyButton
-              type="link"
-              to="https://github.com/dienst3/nuxt-daisyui"
-              title="Find us on GitHub"
-              target="_blank"
-              shape="circle"
-              color="secondary"
-              class="join-item"
-            >
-              <Icon name="mdi:github" size="24px" />
-            </DaisyButton>
-            <DaisyButton
-              type="link"
-              to="https://www.npmjs.com/package/nuxt-daisyui"
-              title="Find us on NPM"
-              target="_blank"
-              shape="circle"
-              color="secondary"
-              class="join-item"
-            >
-              <Icon name="mdi:npm-variant" size="24px" />
-            </DaisyButton>
-          </div>
-          <DaisyInputSelect v-model="theme" size="md" color="primary">
-            <option value="" disabled>Select a theme</option>
-            <option v-for="theme in filteredThemes" :key="theme" :value="theme">
-              {{ theme }}
-            </option>
-          </DaisyInputSelect>
-        </template>
-      </DaisyNavBar>
+          <DaisyButton
+            type="link"
+            to="https://www.npmjs.com/package/nuxt-daisyui"
+            title="Find us on NPM"
+            target="_blank"
+            shape="circle"
+            color="secondary"
+            class="join-item"
+          >
+            <Icon name="mdi:npm-variant" size="24px" />
+          </DaisyButton>
+        </div>
+        <DaisyInputSelect v-model="theme" size="md" color="primary">
+          <option value="" disabled>Select a theme</option>
+          <option v-for="theme in filteredThemes" :key="theme" :value="theme">
+            {{ theme }}
+          </option>
+        </DaisyInputSelect>
+      </template>
+    </DaisyNavBar>
 
-      <div class="mx-2 my-4">
-        <slot />
-      </div>
+    <div class="m-2 lg:ml-4">
+      <slot />
     </div>
   </DaisyDrawer>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-primary text-2xl pb-4">
+  <h2 class="text-2xl pb-4">
     <slot />
-  </h1>
+  </h2>
 </template>
